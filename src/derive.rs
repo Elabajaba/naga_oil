@@ -375,11 +375,12 @@ impl<'a> DerivedModule<'a> {
                             },
                             fun => *fun,
                         };
+                        let result = map_expr!(result.as_ref().unwrap());
                         Statement::Atomic {
                             pointer: map_expr!(pointer),
                             fun,
                             value: map_expr!(value),
-                            result: map_expr!(result),
+                            result: Some(result),
                         }
                     }
                     Statement::WorkGroupUniformLoad { pointer, result } => {
