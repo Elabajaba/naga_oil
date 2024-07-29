@@ -18,7 +18,7 @@ allow_deprecated = []
 
 [dependencies]
 # naga = { version = "0.20", features = ["wgsl-in", "wgsl-out"] }
-naga = { git = "https://github.com/Elabajaba/wgpu.git", branch = "submit-tracking-with-revert", features = ["wgsl-in", "wgsl-out"] }
+naga = { git = "https://github.com/Elabajaba/wgpu.git", branch = "022-heavy-logs", features = ["wgsl-in", "wgsl-out"] }
 # naga = { path = "../wgpu/naga", features = ["wgsl-in", "wgsl-out"] }
 tracing = "0.1"
 regex = "1.8"
@@ -33,7 +33,7 @@ once_cell = "1.17.0"
 indexmap = "2"
 
 [dev-dependencies]
-wgpu = { git = "https://github.com/Elabajaba/wgpu.git", branch = "submit-tracking-with-revert", features = ["naga-ir"] }
+wgpu = { git = "https://github.com/Elabajaba/wgpu.git", branch = "022-heavy-logs", features = ["naga-ir"] }
 # wgpu = { path = "../wgpu/wgpu", features = ["naga-ir"] }
 futures-lite = "1"
 tracing-subscriber = { version = "0.3", features = ["std", "fmt"] }
